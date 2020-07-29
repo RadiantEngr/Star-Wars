@@ -26,6 +26,8 @@ fetch("https://swapi.dev/api/people/")
         list.appendChild(namePTag);
 
         title.innerHTML = "STAR WARS"; // Heading
+        namePTag.style.cursor = 'pointer';
+        list.style.listStyleType = 'none';
 
         // Obtain the name of each character, give each a dummy image
         namePTag.innerHTML = `${objectInResults.name}`;

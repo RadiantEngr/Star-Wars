@@ -22,7 +22,7 @@ body {
 #populate {
     color: #4b0082;
     border-radius: 20px;
-    padding: 0 20px 0 10px;
+    padding: 20px;
     font-size: 40px;
     font-weight: bold;
     background-color: #ff7f50;
@@ -30,6 +30,34 @@ body {
 
 .photo img{
     border-radius: 70px;
+}
+
+#close {
+    cursor: pointer;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#close:hover {
+    background: black;
+}
+
+@media (max-width: 1050px) {
+    .container {
+        display: block;
+    }
+    .needed-properties {
+        position: absolute;
+        top: 200px;
+        width: 100%;
+        text-align: center;
+        background: rgba(59, 55, 55, 0.5)
+    }
+    #close {
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 770px) {
@@ -43,16 +71,26 @@ body {
         display: block;
     }
 
+    .needed-properties {
+        top: 160px;
+    }
+
     #populate {
         display: block;
     }
 
-    .needed-properties {
-        display: block;
-        margin-top: 30px;
-    }
+}
 
-    .needed-properties image {
-        /* size: 50%; */
+@media(max-width: 775px) {
+    li p {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 480px) {
+    li p {
+        font-size: 30px;
+        margin-bottom: 20px;
     }
 }
