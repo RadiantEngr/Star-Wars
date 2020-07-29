@@ -1,5 +1,5 @@
 // Fetch API, change the fetched data to conform with json, and obtain the results from the fetched data
-fetch("https://swapi.dev/api/people/?results")
+fetch("https://swapi.dev/api/people/")
 .then((resp) =>resp.json())
 .then((data) => {
 
