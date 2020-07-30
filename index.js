@@ -86,36 +86,4 @@ fetch("https://swapi.dev/api/people/")
 
 
 
-           // const showStuffs = () => {
-            //     needed_properties.innerHTML = `
-            //     <h1>Name: ${obtainNeededProperties.name}</h1>
-            //     <p>Gender: ${obtainNeededProperties.gender}</p>
-            //     <p>Height: ${obtainNeededProperties.height}</p>
-            //     <img src="${image.src}"/>
-            //     <div id="close1">X</div>
-            // `
-            // let close = document.querySelector('#close1')
-            // // console.log(close);
-            // close.onclick = () => {
-            //     needed_properties.style.display = "none";
-            // }
-            // }
-            // pTag.addEventListener("click", () => {
-
-            
-            
-            
-
-        // firstPTag.onclick = () => {
-        //     needed_properties.innerHTML = `
-        //         <h1>${obtainNeededProperties.name}</h1>
-        //         <p>${obtainNeededProperties.gender}</p>
-        //         <p>${obtainNeededProperties.height}</p>
-        //         <img src="${image.src}" /> 
-
-        //     `
-        // }
-
-
-    
-
+           
