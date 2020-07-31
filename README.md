@@ -1,1 +1,1 @@
-# Star-Wars
+# An application developed to display some characters in Star Wars and a few of their properties, using JavaScript, HTML and CSS.
