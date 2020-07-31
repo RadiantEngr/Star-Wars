@@ -1,3 +1,15 @@
+// Create a class to help obtain the propeties required of each character
+class User {
+    constructor(objectInResults) {
+        this.objectInResults = objectInResults;
+    }
+
+    get findUser() {
+        const {name, gender,height} = this.objectInResults;
+        return {name, gender, height};
+    }
+}
+
 // Fetch API, change the fetched data to conform with json, and obtain the results from the fetched data
 fetch("https://swapi.dev/api/people/")
 .then((resp) =>resp.json())
@@ -32,18 +44,6 @@ fetch("https://swapi.dev/api/people/")
         // Obtain the name of each character, give each a dummy image
         namePTag.innerHTML = `${objectInResults.name}`;
         image.src = `http://lorempixel.com/g/311/400/?random = ${index}`;
-
-        // Create a class to help obtain the propeties required of each character
-        class User {
-            constructor(objectInResults) {
-                this.objectInResults = objectInResults;
-            }
-        
-            get findUser() {
-                const {name, gender,height} = this.objectInResults;
-                return {name, gender, height};
-            }
-        }
 
         // Create an instance (called property) of the class (User)
         const property = new User(objectInResults);
